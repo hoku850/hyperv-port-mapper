@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <!-- 原生 Windows 桌面程序，不启动浏览器或后台网页服务。 -->
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <!-- 高分屏缩放交由 WinForms 处理。 -->
+    <ApplicationHighDpiMode>PerMonitorV2</ApplicationHighDpiMode>
+    <AssemblyName>HyperVPortMapper</AssemblyName>
+    <Version>1.0.0</Version>
+    <!-- 中文产品信息随可执行文件发布。 -->
+    <Product>Hyper-V 端口映射</Product>
+    <Description>Windows IPv4 TCP 端口映射客户端</Description>
+    <DebugType>embedded</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- 所有映射变更均经由已验证的核心逻辑。 -->
+    <ProjectReference Include="../HyperVPortMapper.Core/HyperVPortMapper.Core.csproj" />
+  </ItemGroup>
+</Project>

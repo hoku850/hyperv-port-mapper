@@ -1,0 +1,11 @@
+<Project>
+  <PropertyGroup>
+    <!-- 统一编译约束，让输入与空值问题在构建阶段暴露。 -->
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <!-- 使用项目已安装的 .NET 8 语言版本，不引入预览功能。 -->
+    <LangVersion>12</LangVersion>
+    <AnalysisLevel>latest</AnalysisLevel>
+  </PropertyGroup>
+</Project>

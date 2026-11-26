@@ -1,0 +1,12 @@
+**/bin/
+**/obj/
+.vs/
+release/
+*.user
+*.suo
+
+# 本机工具配置和环境凭据不进入仓库。
+.agents/
+.env
+.env.*
+!.env.example

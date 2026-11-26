@@ -1,0 +1,6 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <!-- 核心逻辑保持平台无关，便于不触碰系统地验证。 -->
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+</Project>

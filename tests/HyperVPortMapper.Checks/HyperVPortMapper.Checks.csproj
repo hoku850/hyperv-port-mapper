@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <!-- 使用可执行检查，不增加第三方测试依赖。 -->
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- 直接检查生产核心类库。 -->
+    <ProjectReference Include="../../src/HyperVPortMapper.Core/HyperVPortMapper.Core.csproj" />
+  </ItemGroup>
+</Project>
